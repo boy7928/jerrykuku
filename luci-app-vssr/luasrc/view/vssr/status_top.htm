@@ -62,12 +62,12 @@
 
     <script>
         const VSSR_ASSETS = '/luci-static/vssr/';
-        const STATUS1_URL = '<%=url([[admin]], [[services]], [[vssr]], [[run]])%>';
+        const STATUS1_URL = '<%=url([[admin]], [[vpn]], [[vssr]], [[run]])%>';
         const CLIENT = '<%:Client%>';
         const GAME_MODE = '<%:Game Mode%>';
         const RUNNING = '<%:Running%>';
         const NOT_RUNNING = '<%:Not Running%>';
-        const CHECK_IP_URL = '<%=url([[admin]], [[services]], [[vssr]], [[ip]])%>';
+        const CHECK_IP_URL = '<%=url([[admin]], [[vpn]], [[vssr]], [[ip]])%>';
 
         XHR.poll(2, STATUS1_URL, null,
             function (x, data) {
